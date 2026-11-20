@@ -1,5 +1,5 @@
 package com.fourTeam.bank.main;
 
-public class run {
+public class Application {
 
 }
