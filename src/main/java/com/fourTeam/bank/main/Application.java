@@ -1,12 +1,9 @@
 package com.fourTeam.bank.main;
 
-import com.fourTeam.bank.basic.controller.CheckingAccount;
-import com.fourTeam.bank.basic.transaction.Transaction;
+import com.fourTeam.bank.basic.controller.CheckingAccountController;
 import com.fourTeam.bank.loan.controller.LoanController;
 import com.fourTeam.bank.member.controller.MemberContoller;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import static com.fourTeam.bank.basic.controller.CheckingAccountController.Application.printCheckingMenu;
@@ -16,6 +13,7 @@ public class Application {
     static Scanner sc = new Scanner(System.in);
     static MemberContoller mc = new MemberContoller();
     static LoanController lc = new LoanController();
+    static CheckingAccountController cc = new CheckingAccountController();
 
 
     public static void main(String[] args) {

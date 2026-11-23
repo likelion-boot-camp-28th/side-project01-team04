@@ -1,10 +1,7 @@
-package com.fourTeam.bank.basic.controller;
+package com.fourTeam.bank.basic.dao;
 
 import java.util.ArrayList;
 import java.util.List;
-
-
-import com.fourTeam.bank.basic.transaction.Transaction;
 
 public class CheckingAccount {
 
@@ -13,7 +10,7 @@ public class CheckingAccount {
     private final String owner;
     private final String accountNumber;
     private int balance;
-    private final List<Transaction> transactions = new ArrayList<>();
+    private final List<TransactionDao> transactions = new ArrayList<>();
 
     public CheckingAccount(String owner, String accountNumber, int balance) {
         this.owner = owner;
@@ -27,7 +24,7 @@ public class CheckingAccount {
             return;
         }
         balance = balance + amount;
-        transactions.add(new Transaction("입금", amount, balance));
+        transactions.add(new TransactionDao("입금", amount, balance));
         System.out.println("계좌 잔액 : " + balance);
     }
 
@@ -41,7 +38,7 @@ public class CheckingAccount {
             return;
         }
         balance = balance - amount;
-        transactions.add(new Transaction("출금", amount, balance));
+        transactions.add(new TransactionDao("출금", amount, balance));
         System.out.println("계좌 잔액 : " + balance);
     }
 
@@ -70,7 +67,7 @@ public class CheckingAccount {
         return balance;
     }
 
-    public List<Transaction> getTransactions() {
+    public List<TransactionDao> getTransactions() {
         return new ArrayList<>(transactions);
     }
 }

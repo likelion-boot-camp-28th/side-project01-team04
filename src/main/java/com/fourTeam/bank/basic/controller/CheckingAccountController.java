@@ -1,6 +1,7 @@
 package com.fourTeam.bank.basic.controller;
 
-import com.fourTeam.bank.basic.transaction.Transaction;
+import com.fourTeam.bank.basic.dao.CheckingAccount;
+import com.fourTeam.bank.basic.dao.TransactionDao;
 import com.fourTeam.bank.member.controller.MemberContoller;
 
 import java.util.ArrayList;
@@ -108,7 +109,7 @@ public class CheckingAccountController {
                     for (CheckingAccount account : accounts) {
                         if (account.getAccountNumber().equals(accountNumber)) {
                             System.out.println("찾았습니다. : " + account.getOwner());
-                            for (Transaction t : account.getTransactions()) {
+                            for (TransactionDao t : account.getTransactions()) {
                                 System.out.println(t);
                             }
                         }
