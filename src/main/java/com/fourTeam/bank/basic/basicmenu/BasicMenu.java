@@ -1,9 +1,9 @@
-package com.fourTeam.basic.basicmenu;
+package com.fourTeam.bank.basic.basicmenu;
 
 //입출금 메뉴 화면
 
-import com.fourTeam.basic.checkingacoount.CheckingAccount;
-import com.fourTeam.basic.transaction.Transaction;
+import com.fourTeam.bank.basic.checkingaccount.CheckingAccount;
+import com.fourTeam.bank.basic.transaction.Transaction;
 
 import java.util.ArrayList;
 import java.util.List;

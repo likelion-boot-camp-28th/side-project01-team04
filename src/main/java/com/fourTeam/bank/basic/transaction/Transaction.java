@@ -1,4 +1,4 @@
-package com.fourTeam.basic.transaction;
+package com.fourTeam.bank.basic.transaction;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

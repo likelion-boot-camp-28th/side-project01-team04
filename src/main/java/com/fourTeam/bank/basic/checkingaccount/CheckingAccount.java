@@ -1,10 +1,10 @@
-package com.fourTeam.basic.checkingacoount;
+package com.fourTeam.bank.basic.checkingaccount;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-import com.fourTeam.basic.transaction.Transaction;
+import com.fourTeam.bank.basic.transaction.Transaction;
 
 public class CheckingAccount {
 
