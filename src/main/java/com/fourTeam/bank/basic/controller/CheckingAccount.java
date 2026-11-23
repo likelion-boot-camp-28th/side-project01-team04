@@ -1,4 +1,4 @@
-package com.fourTeam.bank.basic.checkingaccount;
+package com.fourTeam.bank.basic.controller;
 
 import java.util.ArrayList;
 import java.util.List;
