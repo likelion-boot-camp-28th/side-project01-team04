@@ -1,4 +1,4 @@
-package com.fourTeam.bank.basic.basicmenu;
+package com.fourTeam.bank.basic.Main;
 
 //입출금 메뉴 화면
 
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class BasicMenu {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class BasicMenu {
 
         Scanner sc = new Scanner(System.in);
 
-        while (true) {
+        while (true) {2
 
             System.out.println("1. 입금");
             System.out.println("2. 출금");
