@@ -1,11 +1,11 @@
-package com.fourTeam.bank.basic.transaction;
+package com.fourTeam.bank.basic.dao;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 //거래 내역
 
-public class Transaction {
+public class TransactionDao {
 
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
     private final LocalDateTime dateTime;
@@ -14,7 +14,7 @@ public class Transaction {
     private final int afterBalance;
 
 
-    public Transaction(String trade, int amount, int afterBalance) {
+    public TransactionDao(String trade, int amount, int afterBalance) {
         this.trade = trade;
         this.amount = amount;
         this.afterBalance = afterBalance;
