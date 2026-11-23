@@ -22,7 +22,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        while (true) {2
+        while (true) {
 
             System.out.println("1. 입금");
             System.out.println("2. 출금");
