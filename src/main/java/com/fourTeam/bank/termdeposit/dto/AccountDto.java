@@ -1,4 +1,4 @@
-package com.fourTeam.bank.termdeposit.model.dto;
+package com.fourTeam.bank.termdeposit.dto;
 
 public class AccountDto {
 }
