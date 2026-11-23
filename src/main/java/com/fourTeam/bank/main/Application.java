@@ -2,6 +2,7 @@ package com.fourTeam.bank.main;
 
 import com.fourTeam.bank.basic.checkingaccount.CheckingAccount;
 import com.fourTeam.bank.basic.transaction.Transaction;
+import com.fourTeam.bank.loan.controller.LoanController;
 import com.fourTeam.bank.member.controller.MemberContoller;
 
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ public class Application {
 
     static Scanner sc = new Scanner(System.in);
     static MemberContoller mc = new MemberContoller();
+    static LoanController lc = new LoanController();
 
     // 입출금 계좌 목록 (메뉴를 나갔다 들어와도 잔액 유지)
     static List<CheckingAccount> accounts = new ArrayList<>();
@@ -27,7 +29,7 @@ public class Application {
 
         // 로그인 아이디가 들어왔다면? (로그인 성공한 것 - 타메뉴 노출)
         if(!(loginId.equals(""))){
-            pringBankMenu();
+            pringBankMenu(loginId);
         }
     }
 
@@ -65,7 +67,7 @@ public class Application {
         return result;
     }
 
-    public static void pringBankMenu(){
+    public static void pringBankMenu(String loginId){
         boolean isWorking = true;
 
         while (isWorking) {
@@ -84,7 +86,7 @@ public class Application {
                     System.out.println("예적금 메뉴는 준비 중입니다.");
                     break;
                 case 3:
-                    System.out.println("대출 메뉴는 준비 중입니다.");
+                    lc.run(loginId);
                     break;
                 case 9:
                     isWorking = false;
