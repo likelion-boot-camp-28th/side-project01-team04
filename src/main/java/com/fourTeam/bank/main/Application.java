@@ -3,6 +3,7 @@ package com.fourTeam.bank.main;
 import com.fourTeam.bank.basic.controller.CheckingAccountController;
 import com.fourTeam.bank.loan.controller.LoanController;
 import com.fourTeam.bank.member.controller.MemberContoller;
+import com.fourTeam.bank.termdeposit.controller.SavingController;
 
 import java.util.Scanner;
 
@@ -13,6 +14,8 @@ public class Application {
     static Scanner sc = new Scanner(System.in);
     static MemberContoller mc = new MemberContoller();
     static LoanController lc = new LoanController();
+    static SavingController ssc = new SavingController();
+
     static CheckingAccountController cc = new CheckingAccountController();
 
 
@@ -75,7 +78,7 @@ public class Application {
                     printCheckingMenu();
                     break;
                 case 2:
-                    System.out.println("예적금 메뉴는 준비 중입니다.");
+                    ssc.run(loginId);
                     break;
                 case 3:
                     lc.run(loginId);
